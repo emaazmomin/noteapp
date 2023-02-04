@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="saved-notes" id="saved-notes${index}">
+        <h4 id="saved-heading">${element.title}</h4>
+        <p id="p${index}">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus debitis placeat sit tempora sapiente dolorem vitae culpa, temporibus illo. Explicabo, qui harum facere nostrum at dolorum corrupti eveniet odit vitae, nobis accusamus, eius voluptatibus velit. Perferendis eaque id quo dolorem voluptate necessitatibus repellat laboriosam consequatur dolore, veritatis cumque accusamus ullam cupiditate iusto fugiat itaque repellendus sunt alias magnam. Laborum, facilis!</p><br>
+        <div id="both-btn">
+            <img src="delete.png" class="delete" id="${index}" onclick="deleteNote(this.id)">
+            <button class="imp" id="${index}" onclick="impNote(this.id)">Important</button>
+        </div>
+    </div>
+</body>
+<link rel="stylesheet" href="note_style.css">
+<script src="include.js"></script>
+<script>
+    console.log(document.getElementById('saved-notes${index}'));
+</script>
+<style>
+    .saved-notes {
+        /* overflow: scroll; */
+        /* scrollbar-width: none; */
+        /* background-color: #bbb; */
+        /* width: 500px;
+        height: 600px; */
+        overflow-y: scroll;
+    }
+    .saved-notes::-webkit-scrollbar {
+  display: none;
+}
+</style>
+
+</html>

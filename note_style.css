@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img.bg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    filter: blur(5px);
+    height: 900px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navbar {
+    border: 2px solid black;
+    margin-top: 1px;
+    padding: 13px 13px;
+    background-color: rgb(100 10 81);
+    color: white;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list {
+    padding: 1px 8px;
+    list-style: none;
+}
+
+#list-2 {
+    padding: 3px 7px;
+}
+
+#heading {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color:rgb(124 3 30);
+    color: rgb(191, 218, 218);
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 12px;
+}
+#box{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+ }
+.title-box{
+    border: 2px solid white;
+    background-color: rgb(137 131 79);
+    color: rgb(37, 34, 78);
+    font-weight: bold;
+    width: 750px;
+    height: 24px;
+    padding: 10px;
+    font-size: 19px;
+    font-style: oblique;
+    margin: 5px 0px;
+
+}
+
+.write-box{
+    border: 2px solid white;
+    background-color: rgb(183 161 140);
+    color: rgb(48, 45, 102);
+    width: 750px;
+    height: 200px;
+    padding: 10px;
+    font-size: 19px;
+    font-style: oblique;
+}
+.title-box::placeholder{
+    color: rgb(42, 68, 90);
+
+}
+.write-box::placeholder{
+    color: aliceblue;
+}
+#btn{
+    background-color: rgb(126, 126, 245);
+    color: black;
+    border: 1px solid rgb(28, 28, 43);
+    border-radius: 5PX;
+    padding: 4px 7px;
+    margin: 1px;
+    width: 56px;
+    height: 30px;
+    font-size: 17px;
+}
+#btn:hover{
+    border:2px solid rgb(30, 30, 55);
+    background-color:  rgb(195, 195, 229);
+
+}
+#btn:active{
+    background-color: rgb(154, 154, 173);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 255);
+}
+hr{
+    background-color: black;
+    /* color: black; */
+    padding: 1px;
+    margin: 10px;
+}
+#h3-head {
+    border: 1px solid black;
+    color: rgb(238, 229, 216);
+    background-color:rgb(51, 44, 34) ;
+    /* position: relative; */
+    /* right: 304px; */
+    padding: 10px;
+    margin-top: 19px; 
+}
+
+.snb{
+    background-color: rgb(0 1 22);
+    direction: row;
+    position: relative;
+    left: 216px;
+    margin: 10px 10px;
+    width: 842px;
+    max-height: 400px;
+    overflow-y: scroll;
+    /* scroll-behavior: auto; */
+    
+}
+.snb::-webkit-scrollbar {
+    display: none;
+  }
+
+#saved-box-heading{
+    position: relative;
+    top: 0;
+    left: 329px;
+    color: rgb(132, 158, 206);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    border: 2px solid wheat;
+    width: 160px;
+}
+.saved-heading{
+    /* border: 1px solid black; */
+    background-color: rgb(137 131 79);
+    color: rgb(37, 34, 78);
+    display: flex;
+    justify-content: center;
+    height: 23px;
+    width: 232px;
+    padding: 4px;
+}
+
+#saved-notes-div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px;
+    color: rgb(208, 207, 236);
+}
+#no-notes{
+    color: rgb(208, 207, 236);
+    text-align: center;
+    font-size: 20px;
+    padding: 92px;
+}
+.saved-notes{
+    /* border: 2px solid black; */
+    background-color: rgb(183 161 140);
+    border-radius: 5px;
+    font-size: 20px;
+    width: 240px;
+    overflow-y: scroll;
+    /* scrollbar-color: black; */
+    /* scroll-behavior: smooth; */
+    height: 146px;
+    /* display: inline-grid; */
+    margin: 10px;
+}
+.saved-notes::-webkit-scrollbar {
+    display: none;
+  }
+.saved-notes-scroll{
+    border: 2px solid black;
+    background-color: rgb(183 161 140);
+    border-radius: 5px;
+    font-size: 20px;
+    width: 240px;
+    overflow-y: scroll;
+    scrollbar-color: black;
+    scroll-behavior: smooth;
+    height: 146px;
+    display: inline-grid;
+    margin: 10px;
+}
+.imp-note{
+    border: 2px solid black;
+    background-color: rgb(132, 228, 102);
+    border-radius: 5px;
+    font-size: 20px;
+    width: 240px;
+    overflow-y: scroll;
+    height: 146px;
+    margin: 10px;
+}
+.imp-note::-webkit-scrollbar{
+    display: none;
+}
+p{
+    width: 200px;
+    overflow-wrap:break-word ;
+    padding: 5px;
+}
+.both-btn{
+    margin-top: 6px;
+    margin-left:8px ;
+}
+.delete{
+    filter: saturate(100%);
+    /* background-color: rgb(126, 126, 245); */
+    /* color: black; */
+    /* border: 2px solid rgb(28, 28, 43); */
+    /* border-radius: 5PX; */
+    /* margin: -14px 9px; */
+    /* font-size: 15px; */
+    width: 21px;
+    height: 23px;
+}
+
+.delete:hover{
+    filter: saturate(10%);
+    /* filter: brightness(1); */
+    /* color: rgb(247, 72, 72); */
+    /* color: rgb(0, 0, 0); */
+    /* border: 2px solid rgb(238, 28, 28); */
+}
+.delete:active{
+    background-color: rgb(237, 40, 40);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.imp{
+    background-color: rgb(126, 126, 245);
+    color: black;
+    border: 2px solid rgb(28, 28, 43);
+    border-radius: 5PX;
+    margin: 3px;
+    font-size: 15px;
+    width: 77px;
+}
+
+.imp:hover{
+    background-color: rgb(69, 110, 30);
+    color: rgb(229, 233, 189);
+    border: 2px solid rgb(0, 0, 0);
+}
+.imp:active{
+    background-color: rgb(40, 65, 17);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+}
+@media screen and (max-width:413px) {
+    #box{
+        width: 409px;
+    }
+    .title-box{
+        margin-left: 3px;
+        width: 371px;
+    }
+    .write-box{
+        width: 372px;
+        margin-left: 3px;
+        height: 162px;
+    }
+    .snb{
+        left: -4px;
+        width: 402px;
+    }
+    #saved-box-heading{
+        left: 122px;
+    }
+    #saved-notes-div{
+        display: block;
+    }
+    .saved-notes{
+        width: 361px;
+        height: 129px;
+    }
+    .imp-note{
+        width: 361px;
+        height: 129px;
+    }
+    .saved-heading{
+        width: 353px;
+    }
+}
