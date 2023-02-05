@@ -4,7 +4,7 @@ shownotes();
 
 //Function to add notes in local storage using click event
 let btn = document.getElementById('btn');
-btn.addEventListener('click', function () {
+btn.addEventListener('mousedown', e=> {
     let title = document.getElementById('title-box');
     let addnotes = document.getElementById('write-box');
     let notes = localStorage.getItem("notes");
@@ -41,17 +41,15 @@ btn.addEventListener('click', function () {
         localStorage.setItem("notes", JSON.stringify(noteObj));
         title.value = "";//this will empty the text area value after adding the note
         addnotes.value = "";//this will empty the text area value after adding the note
+        window.location.reload();
         shownotes();
     }
-    window.location.reload();
 });
 
 
-
-// document.getElementsByClassName('imp').innerHTML = "Undo";
-
 //function to show notes from local storage
 function shownotes() {
+    // window.location.reload();
     let notes = localStorage.getItem("notes");
     if (notes == null) {
         noteObj = [];
@@ -69,10 +67,11 @@ function shownotes() {
         <p id="p${index}">${element.note}</p><br>
         <div class= "both-btn">
         <img src="img/delete.png" class="delete" id="${index}" onclick="deleteNote(this.id)">
-        <button class="imp" id="imp${index}" >${element.buttonHTM}</button>
+        <button type='submit' class="imp" id="imp${index}">${element.buttonHTM}</button>
         </div>
         </div>
-        `
+        `;
+        // window.location.reload();
     });
     // console.log(Array(Array(notes)));
 
@@ -111,8 +110,10 @@ function deleteNote(index) {
 
 //function to mark note as important
 let imp = document.getElementsByClassName('imp');
+console.log(imp);
 Array.from(imp).forEach((imp) => {
     imp.addEventListener('click', e => {
+        console.log("imp");
         //to get the index number of the note marked to be important
         let num = e.target.id.slice(3);
         //getting local storage data

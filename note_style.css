@@ -101,15 +101,10 @@ form{
     height: 30px;
     font-size: 17px;
 }
-#btn:hover{
+#btn:focus{
     border:2px solid rgb(30, 30, 55);
     background-color:  rgb(195, 195, 229);
 
-}
-#btn:active{
-    background-color: rgb(154, 154, 173);
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(0, 0, 255);
 }
 hr{
     background-color: black;
