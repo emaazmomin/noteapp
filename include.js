@@ -90,7 +90,7 @@ function shownotes() {
 
 //delete function
 function deleteNote(index) {
-    let a = confirm('Deleted this note?');
+    let a = confirm('Delete this note?');
     if (a == true) {
         // console.log(a);
         let notes = localStorage.getItem("notes");
