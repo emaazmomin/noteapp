@@ -43,6 +43,7 @@ btn.addEventListener('click', function () {
         addnotes.value = "";//this will empty the text area value after adding the note
         shownotes();
     }
+    window.location.reload();
 });
 
 
