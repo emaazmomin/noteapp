@@ -269,7 +269,7 @@ p{
     color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
 }
-@media screen and (min-width:360px) {
+@media screen and (max-width:375px) {
     #heading{
         padding: 7px;
     }
@@ -309,7 +309,7 @@ p{
         left: 89px;
     }
 }
-@media screen and (min-width:370px) {
+@media screen and (max-width:375px) {
     #heading{
         padding: 7px;
     }
@@ -347,7 +347,7 @@ p{
         left: 99px;
     }
 }
-@media screen and (min-width:380px) {
+@media screen and (max-width:413px) {
     #heading{
         padding: 7px;
     }
@@ -359,95 +359,31 @@ p{
     }
     .write-box{
         width: 350px;
+        height: 131px;
     }
     img.bg{
-        height: 969px;
+        height: 914px;
     }
     #saved-notes-div{
         display: block;
     }
     .saved-notes{
-        width: 318px;
+        width: 346px;
         height: 135px;
     }
     .imp-note{
-        width: 318px;
+        width: 346px;
         height: 135px;
     }
     .saved-heading{
-        width: 309px;
+        width: 338px;
     }
     .snb{
         left: 1px;
-        width: 365px;
+        width: 390px;
+        max-height: 487px;
     }
     #saved-box-heading{
         left: 99px;
-    }
-}
-@media screen and (min-width:400px) {
-    #box{
-        width: 409px;
-    }
-    .title-box{
-        margin-left: 3px;
-        width: 371px;
-    }
-    .write-box{
-        width: 372px;
-        margin-left: 3px;
-        height: 162px;
-    }
-    .snb{
-        left: -4px;
-        width: 402px;
-    }
-    #saved-box-heading{
-        left: 122px;
-    }
-    #saved-notes-div{
-        display: block;
-    }
-    .saved-notes{
-        width: 361px;
-        height: 129px;
-    }
-    .imp-note{
-        width: 361px;
-        height: 129px;
-    }
-    .saved-heading{
-        width: 353px;
-    }
-    img.bg{
-        height: 923px;
-    width: 101%;
-    }
-}
-@media screen and (min-width:710px) {
-    .title-box{
-        width: 470px;
-    }
-    .write-box{
-        width: 470px;
-    }
-}
-@media screen and (min-width:1868px) {
-    img.bg{
-        height: 944px;
-    }
-    #heading h1{
-        font-size: 20px;
-    }
-    .title-box{
-        width: 970px;
-    }
-    .write-box{
-        width: 970px;
-    }
-    #btn{
-        width: 134px;
-    height: 48px;
-    font-size: 36px;
     }
 }
